@@ -20,7 +20,6 @@ select, input, button {
   margin: 0 .5em 1em 0em;
   border: none;
   box-shadow: none;
-  background-color: lightgray;
   line-height: 2em;
   padding: 0 1em 0 1em;
 }
