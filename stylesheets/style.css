@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+.chart {
+  margin: 2em auto;
+  width: 40%;
+}
+
+select, input, button {
+  border-radius: 6px;
+  font-size: 105%;
+  font-weight: 100;
+  margin: 0 .5em 1em 0em;
+  border: none;
+  box-shadow: none;
+  background-color: lightgray;
+  line-height: 2em;
+  padding: 0 1em 0 1em;
+}
+
+select {
+  background: transparent;
+}
+
+input {
+  line-height: 1.5em;
+  padding: 0 .5em 0 .5em;
+}
+
+.light {
+  background-color: #E4FAFF;
+}
+.med-light {
+  background-color: #C9F4FF;
+}
+.med {
+  background-color: #94E9FF;
+}
+.med-dark {
+  background-color: #5EDEFF;
+}
+.dark {
+  background-color: #0DCEFF;
+}
