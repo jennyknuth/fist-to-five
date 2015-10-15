@@ -1,21 +1,20 @@
 app.factory('voteservice', function() {
   var voteservice = {};
 
+  voteservice.initialize = function () {
+    arr = []
+    for (var i = 0; i < 5; i++) {
+      arr.push(0)
+    }
+    return arr;
+  }
+
   // make a count array for data
-  voteservice.dataArr = function (obj) {
-    console.log(obj);
+  voteservice.dataArr = function (arr) {
     var votes = []
-    angular.forEach(obj, function(value, key) {
-      console.log(key, value);
-      votes.push(value)
+    arr.forEach(function(level){
+      votes.push(level)
     })
-    // for (key in obj) {
-    //   votes.push(obj[key])
-    // }
-    // arr.forEach(function(level){
-    //   votes.push(level.count)
-    // })
-    console.log(votes);
     return votes;
   }
 
