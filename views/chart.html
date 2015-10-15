@@ -13,10 +13,10 @@
   </select>
 </div>
 
-<button ng-show="scale === 'level'" ng-repeat="value in values" ng-model="votes.value" ng-click="addVote(value)" class="{{ value | valueClass}}">{{ value | displayLevel }}</button>
+<button ng-show="scale === 'level'" ng-repeat="value in values" ng-model="votes.value" ng-click="addVote(value)" class="{{ value | valueClass}}">{{ value | displayLevel }} <span ng-show="votes[value] > 0">[{{votes[value]}}]</span></button>
 <button ng-show="scale === 'agree'" ng-repeat="value in values" ng-model="votes.value" ng-click="addVote(value)" class="{{ value | valueClass}}">{{ value | displayAgree }}</button>
 <button ng-show="scale === 'number'" ng-repeat="value in values" ng-model="votes.value" ng-click="addVote(value)" class="{{ value | valueClass}}">{{ 4 - value }}</button>
 
 <br>
-<h3>Total votes: {{number}} </h3>
-<input ng-click="reset()" type="submit" value="reset" class="light">
+<p>Total votes: {{number}} </p>
+<input ng-click="reset(votes)" type="submit" value="reset" class="light">
