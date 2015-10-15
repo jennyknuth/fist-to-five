@@ -4,7 +4,7 @@
     chart-data="data" chart-labels="labels">
   </canvas>
 </div>
-
+<p>{{votes}}</p>
 <div class="select-style">
   <select ng-model="scale" ng-init="scale = 'level'">
     <option value="agree">agreement</option>
@@ -18,5 +18,5 @@
 <button ng-show="scale === 'number'" ng-repeat="value in values" ng-model="votes.value" ng-click="addVote(value)" class="{{ value | valueClass}}">{{ 4 - value }}</button>
 
 <br>
-<h3>Total votes: {{number}} </h3>
+<p>Total votes: {{number}} </p>
 <input ng-click="reset()" type="submit" value="reset" class="light">
