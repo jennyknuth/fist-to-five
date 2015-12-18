@@ -12,7 +12,7 @@
   </select>
 </div>
 
-<button ng-show="scale === 'level'" ng-repeat="value in values" ng-model="votes.value" ng-click="addVote(value)" class="{{ value | valueClass}}">{{ value | displayLevel }} <span ng-show="votes[value] > 0">[{{votes[value]}}]</span></button>
+<button ng-show="scale === 'level'" ng-repeat="value in values" ng-model="votes.value" ng-click="addVote(value)" class="{{ value | valueClass}}">{{ value | displayLevel }} <span ng-show="votes[value] > 0">({{votes[value]}})</span></button>
 <button ng-show="scale === 'agree'" ng-repeat="value in values" ng-model="votes.value" ng-click="addVote(value)" class="{{ value | valueClass}}">{{ value | displayAgree }}</button>
 <button ng-show="scale === 'number'" ng-repeat="value in values" ng-model="votes.value" ng-click="addVote(value)" class="{{ value | valueClass}}">{{ 4 - value }}</button>
 

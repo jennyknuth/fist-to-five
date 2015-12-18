@@ -2,20 +2,16 @@ app.controller('VoteController', ['$scope', '$firebaseObject', 'voteservice', fu
   var votesRef = new Firebase('https://sizzling-inferno-2573.firebaseio.com/votes')
   // $scope.votes = $firebaseArray(votesRef)
   var obj = $firebaseObject(votesRef)
-  obj.$loaded().then(function(d) {
-    obj.$watch(function() {
-      console.log("data changed!");
-    });
-    if (obj.votes === undefined) {
-      obj.votes = voteservice.initialize()
-    }
-    $scope.votes = obj.votes
-    $scope.data = voteservice.dataArr($scope.votes)
-    $scope.number = voteservice.countVotes($scope.data)
-    if ($scope.number === 0) { // default view when no votes
-      $scope.data[4]=1
-    }
-  })
+  obj.$watch(function () {
+    obj.$loaded().then(function(d) {
+      $scope.votes = obj.votes
+      $scope.data = voteservice.dataArr($scope.votes)
+      $scope.number = voteservice.countVotes($scope.data)
+      if ($scope.number === 0) { // default view when no votes
+        $scope.data[4]=1
+      }
+    })
+  });
   $scope.labels = ["high", "medium-high", "medium", "medium-low", "low"];
   $scope.values = [4, 3, 2, 1, 0];
   Chart.defaults.global.colours=['#0DCEFF', '#5EDEFF', '#94E9FF', '#C9F4FF', '#E4FAFF'];
