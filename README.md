@@ -3,7 +3,7 @@
 
 See it live here: http://jennyknuth.github.io/fist-to-five
 
-![](//fist-to-five/screenshots/fistToFiveSS400.png)
+![](fist-to-five/screenshots/fistToFiveSS400.png)
 
 Fist-to-Five is a **real-time web app** that allows people to weigh-in on questions and offer opinions. 
 
