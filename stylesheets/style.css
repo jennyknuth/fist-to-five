@@ -10,7 +10,7 @@ h1, h2, h3 {
 
 .chart {
   margin: 2em auto;
-  width: 40%;
+  width: 40vmax;
 }
 
 select, input, button {
