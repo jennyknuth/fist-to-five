@@ -1,9 +1,9 @@
 # Fist-to-Five
-## a student comprehension meter made with Angular and Firebase
+### a student comprehension meter made with Angular and Firebase
 
 See it live here: http://jennyknuth.github.io/fist-to-five
 
-Fist-to-Five is a web app that allows people to weigh-in on questions and offer opinions in real time. 
+Fist-to-Five is a *real-time web app* that allows people to weigh-in on questions and offer opinions. 
 
 For example, a teacher can ask "How well do you understand JavaScript promises?" or simply make a statement: "The sides of an isoceles triangle have equal length," choose a scale, and allow participants to vote. The teacher can instantly determine whether to review or move on to the next topic. 
 
