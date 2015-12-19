@@ -9,7 +9,7 @@ Fist-to-Five is a **real-time web app** that allows people to weigh-in on questi
 
 For example, a teacher can ask "How well do you feel you understand JavaScript promises?" or simply make a statement: "The sides of an isoceles triangle have equal length," choose a scale, and allow participants to vote. The teacher can instantly determine whether to review or move on to the next topic. 
 
-<img src="https://github.com/jennyknuth/fist-to-five/blob/master/screenshots/fistToFiveScaleShot300.png">
+<img src="https://github.com/jennyknuth/fist-to-five/blob/master/screenshots/fistToFiveScaleShot300.png" width="300px">
 
 Data is stored in the cloud and any changes are rendered instantly to any device pointing to the fist-to-five url. Each user can immediately see changes made by other users.  
 
