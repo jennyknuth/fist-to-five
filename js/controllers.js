@@ -1,9 +1,11 @@
 app.controller('VoteController', ['$scope', '$firebaseObject', 'voteservice', function($scope, $firebaseObject, voteservice){
   var votesRef = new Firebase('https://sizzling-inferno-2573.firebaseio.com/votes')
-  // $scope.votes = $firebaseArray(votesRef)
   var obj = $firebaseObject(votesRef)
   obj.$watch(function () {
     obj.$loaded().then(function(d) {
+      console.log(obj.votes);
+      console.log(obj.scale);
+      $scope.scale = obj.scale
       $scope.votes = obj.votes
       $scope.data = voteservice.dataArr($scope.votes)
       $scope.number = voteservice.countVotes($scope.data)
@@ -11,10 +13,10 @@ app.controller('VoteController', ['$scope', '$firebaseObject', 'voteservice', fu
         $scope.data[4]=1
       }
     })
+    $scope.labels = ["high", "medium-high", "medium", "medium-low", "low"];
+    $scope.values = [4, 3, 2, 1, 0];
+    Chart.defaults.global.colours=['#0DCEFF', '#5EDEFF', '#94E9FF', '#C9F4FF', '#E4FAFF'];
   });
-  $scope.labels = ["high", "medium-high", "medium", "medium-low", "low"];
-  $scope.values = [4, 3, 2, 1, 0];
-  Chart.defaults.global.colours=['#0DCEFF', '#5EDEFF', '#94E9FF', '#C9F4FF', '#E4FAFF'];
 
   $scope.addVote = function (level) {
     // level is the key of the firebaseObject to update
@@ -35,6 +37,12 @@ app.controller('VoteController', ['$scope', '$firebaseObject', 'voteservice', fu
       $scope.number = 0;
       $scope.data = [0,0,0,0,1] // default view when no votes
     })
+  }
+
+  $scope.setScale = function (scale) {
+    console.log(scale);
+    obj.scale = scale
+    obj.$save()
   }
 
 }])

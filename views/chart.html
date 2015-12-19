@@ -5,8 +5,8 @@
   </canvas>
 </div>
 <div class="select-style">
-  <select ng-model="scale" ng-init="scale = 'level'">
-    <option value="agree">agreement</option>
+  <select ng-model="scale" ng-change="setScale(scale)" >
+    <option value="agree" >agreement</option>
     <option value="level">low to high</option>
     <option value="number">number scale</option>
   </select>
