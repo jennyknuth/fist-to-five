@@ -3,7 +3,7 @@
 
 See it live here: http://jennyknuth.github.io/fist-to-five 
 <div style="float: right">
-    <img src="https://github.com/jennyknuth/fist-to-five/blob/master/screenshots/fistToFiveSS400.png?raw=true">
+    <img src="https://github.com/jennyknuth/fist-to-five/blob/master/screenshots/fistToFiveLookingForClarity.png?raw=true">
 </div>
 
 
