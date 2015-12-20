@@ -2,7 +2,7 @@ select, input, button {
   border-radius: 6px;
   font-size: 105%;
   font-weight: 300;
-  margin: 0 .5em 1.5em 0em;
+  margin: 0 .5em 1em 0em;
   border: none;
   box-shadow: none;
   line-height: 2em;
@@ -11,6 +11,7 @@ select, input, button {
 
 select {
   background: transparent;
+  margin-bottom: 1em;
 }
 
 input {

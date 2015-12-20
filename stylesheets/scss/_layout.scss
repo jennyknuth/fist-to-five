@@ -2,4 +2,27 @@ body {
   font-family: sans-serif;
   font-weight: 300;
   text-align: center;
+  padding: 1em;
+  width: 100%;
+  position: relative;
+  .scale-bar {
+    width: 100%;
+    margin: 0 auto;
+    height: 150px;
+    .option {
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+  }
+  .footer {
+    // clear: both;
+    // position: fixed;
+    // bottom: 0;
+    // height: auto;
+    left: 0;
+    right: 0;
+    // bottom: 0;
+  }
 }

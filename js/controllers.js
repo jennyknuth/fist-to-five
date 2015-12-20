@@ -13,7 +13,7 @@ app.controller('VoteController', ['$scope', '$firebaseObject', 'voteservice', fu
         $scope.data[4]=1
       }
     })
-    $scope.labels = ["high", "medium-high", "medium", "medium-low", "low"];
+    $scope.labels = ["high", "medium-high", "medium", "medium-low", "low"]; // fix this to reflect scale!
     $scope.values = [4, 3, 2, 1, 0];
     Chart.defaults.global.colours=['#0DCEFF', '#5EDEFF', '#94E9FF', '#C9F4FF', '#E4FAFF'];
   });

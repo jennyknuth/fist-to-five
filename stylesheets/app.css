@@ -1,3 +1,28 @@
+.ng-enter {
+  transition: 0.75s;
+  opacity: 0; }
+
+.ng-enter-active {
+  opacity: 1; }
+
+.ng-leave {
+  transition: 0.75s;
+  opacity: 1; }
+
+.ng-leave-active {
+  opacity: 0; }
+
+.ng-enter-stagger {
+  transition-delay: 0.1s; }
+
+.option.ng-hide {
+  transition: opacity 0.5s ease;
+  opacity: 0; }
+
+.option {
+  transition: opacity 0.5s ease 0.2s;
+  opacity: 1; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
  v2.0 | 20110126
  License: none (public domain)
@@ -48,7 +73,22 @@ table {
 body {
   font-family: sans-serif;
   font-weight: 300;
-  text-align: center; }
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  position: relative; }
+  body .scale-bar {
+    width: 100%;
+    margin: 0 auto;
+    height: 150px; }
+    body .scale-bar .option {
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0; }
+  body .footer {
+    left: 0;
+    right: 0; }
 
 h1 {
   font-size: 1.5em;
@@ -67,39 +107,23 @@ select, input, button {
   border-radius: 6px;
   font-size: 105%;
   font-weight: 300;
-  margin: 0 0.5em 1.5em 0em;
+  margin: 0 0.5em 1em 0em;
   border: none;
   box-shadow: none;
   line-height: 2em;
   padding: 0 1em 0 1em; }
 
 select {
-  background: transparent; }
+  background: transparent;
+  margin-bottom: 1em; }
 
 input {
   line-height: 1.5em;
   padding: 0 0.5em 0 0.5em;
   margin: .7em; }
 
-.ng-enter {
-  transition: 0.75s;
-  opacity: 0; }
-
-.ng-enter-active {
-  opacity: 1; }
-
-.ng-leave {
-  transition: 0.75s;
-  opacity: 1; }
-
-.ng-leave-active {
-  opacity: 0; }
-
-.ng-enter-stagger {
-  transition-delay: 0.1s; }
-
 .chart {
-  margin: 2em auto;
+  margin: 1em auto;
   width: 40vmax; }
 
 .light {
