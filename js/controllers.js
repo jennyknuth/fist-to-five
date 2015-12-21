@@ -3,8 +3,6 @@ app.controller('VoteController', ['$scope', '$firebaseObject', 'voteservice', fu
   var obj = $firebaseObject(votesRef)
   obj.$watch(function () {
     obj.$loaded().then(function(d) {
-      console.log(obj.votes);
-      console.log(obj.scale);
       $scope.scale = obj.scale
       $scope.votes = obj.votes
       $scope.data = voteservice.dataArr($scope.votes)
@@ -13,7 +11,7 @@ app.controller('VoteController', ['$scope', '$firebaseObject', 'voteservice', fu
         $scope.data[4]=1
       }
     })
-    $scope.labels = ["high", "medium-high", "medium", "medium-low", "low"]; // fix this to reflect scale!
+    $scope.labels = voteservice.getLabels(obj.scale)
     $scope.values = [4, 3, 2, 1, 0];
     Chart.defaults.global.colours=['#0DCEFF', '#5EDEFF', '#94E9FF', '#C9F4FF', '#E4FAFF'];
   });
