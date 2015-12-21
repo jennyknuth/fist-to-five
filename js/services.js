@@ -16,17 +16,17 @@ app.factory('voteservice', function() {
     })
   }
 
-  voteservice.getLabels = function (scale) {
-    var labels = []
-    if (scale === 'agree') {
-      labels = ['strongly agree', 'agree', 'neither agree nor disagree', 'disagree', 'strongly disagree']
-    } else if (scale === 'number') {
-      labels = [4, 3, 2, 1, '0']
-    } else {
-      labels = ['high', 'medium-high', 'medium', 'medium-low', 'low']
-    }
-    return labels
-  }
+  // voteservice.getLabels = function (scale) { //graph rerenders each time labels change, hrmmmmf
+  //   var labels = []
+  //   if (scale === 'agree') {
+  //     labels = ['strongly agree', 'agree', 'neither agree nor disagree', 'disagree', 'strongly disagree']
+  //   } else if (scale === 'number') {
+  //     labels = [4, 3, 2, 1, '0']
+  //   } else {
+  //     labels = ['high', 'medium-high', 'medium', 'medium-low', 'low']
+  //   }
+  //   return labels
+  // }
 
   return voteservice;
 });
