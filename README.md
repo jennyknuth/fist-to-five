@@ -5,7 +5,7 @@ See it live here: http://jennyknuth.github.io/fist-to-five
     
 <img src="https://github.com/jennyknuth/fist-to-five/blob/master/screenshots/fistToFiveLookingForClarity.png" width="300px">
 
-Fist-to-Five is a **real-time web app** that allows people to weigh-in on questions and offer opinions. 
+Based on the technique of asking students to raise one to five fingers, Fist-to-Five is a **real-time web app** that allows groups to give feedback on questions and offer opinions. 
 
 For example, a teacher can ask "How well do you feel you understand JavaScript promises?" or simply make a statement: "The sides of an isoceles triangle have equal length," choose a scale, and allow participants to vote. The teacher can instantly determine whether to review or move on to the next topic. 
 
