@@ -16,6 +16,7 @@ app.factory('voteservice', function() {
     })
   }
 
+  // removed: chart rerenders each time labels are changed
   // voteservice.getLabels = function (scale) { //graph rerenders each time labels change, hrmmmmf
   //   var labels = []
   //   if (scale === 'agree') {

@@ -24,6 +24,7 @@ app.filter('displayAgree', function () {
   };
 });
 
+// color map for buttons
 app.filter('valueClass', function () {
   return function (input) {
     var name = {

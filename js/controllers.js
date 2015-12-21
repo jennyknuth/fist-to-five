@@ -11,7 +11,7 @@ app.controller('VoteController', ['$scope', '$firebaseObject', 'voteservice', fu
         $scope.data[4]=1
       }
     })
-    $scope.labels = ["strongest", "strong", "medium", "weak", "weakest"]; // fix this to reflect scale!
+    $scope.labels = ["strongest", "strong", "medium", "weak", "weakest"]; // tried to fix, but chart rerenders when labels update...
     $scope.values = [4, 3, 2, 1, 0];
     Chart.defaults.global.colours=['#0DCEFF', '#5EDEFF', '#94E9FF', '#C9F4FF', '#E4FAFF'];
   });

@@ -8,21 +8,12 @@ body {
   .scale-bar {
     width: 100%;
     margin: 0 auto;
-    height: 150px;
+    height: 150px; // this positions footer div below
     .option {
-      position: absolute;
+      position: absolute; // has to be abosolute in order to cross-fade? Causes other problems...but is there another solution?
       margin: 0 auto;
       left: 0;
       right: 0;
     }
-  }
-  .footer {
-    // clear: both;
-    // position: fixed;
-    // bottom: 0;
-    // height: auto;
-    left: 0;
-    right: 0;
-    // bottom: 0;
   }
 }
